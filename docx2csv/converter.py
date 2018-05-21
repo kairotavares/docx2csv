@@ -23,7 +23,7 @@ def __extract_table(table):
                     r.append(r[-1])
                 else:
                     cell = _Cell(tc, table)
-                    r.append(cell.text.replace('\n', ' ').encode('utf8'))
+                    r.append(cell.text.replace('\n', ' '))
         results.append(r)
         n += 1
     return results
